@@ -1,0 +1,15 @@
+<h2>Nouvelle Collection</h2>
+<section class="clothes_list clear">
+
+    <?php
+        $newCollection = getNewCollection();
+        foreach ($newCollection as $new): ?>
+            <article>
+                    <a href="page_nouvelleco/cleopatre.html">
+                    <a href="productDetail.php?id=<?php echo $new['id'] ?>">
+                    <img src="<?php echo $new['path'] ?>" alt="<?php echo $new['title'] ?>">
+                </a>
+                <h3><?php echo $new['title'] ?></h3>
+            </article> 
+    <?php endforeach; ?>
+</section>

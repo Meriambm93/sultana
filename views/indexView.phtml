@@ -1,0 +1,103 @@
+<!-- Nouveautés -->
+<section>
+    <article class="new_product">
+        <!--<h1>Nouveautés</h1>-->
+        <div class="flexslider">
+            <ul class="slides">
+
+                <li>
+                    <img src="public/images/slider/crush.png" alt="crush">
+                </li>
+
+                <li>
+                    <img src="public/images/slider/abaya_brocar.jpg" alt="abaya brocar">
+                </li>
+                <li>
+                    <img src="public/images/slider/smoking.jpg" alt="smoking">
+                </li>
+                <li>
+                    <img src="public/images/slider/sequins_tulles.jpg" alt="sequin">
+                </li>
+                <li>
+                    <img src="public/images/slider/expression.png" alt="expression">
+                </li>
+                <li>
+                    <img src="public/images/slider/blanc.jpg" alt="blanc">
+                </li>
+                <li>
+                    <img src="public/images/slider/white.jpg" alt="white">
+                </li>
+                <li>
+                    <img src="public/images/slider/vanilla.jpg" alt="vanilla">
+                </li>
+                <li>
+                    <img src="public/images/slider/sport_luxe.jpg" alt="sport luxe">
+                </li>
+
+            </ul>
+        </div>
+    </article>
+    <!-- Fin Nouveautés-->
+    <article></article> 
+</section>
+<!-- Fin nouveautés -->
+
+<!-- Photo instagram -->
+
+<section class="insta">
+    <h1>Instagram</h1>
+    <p>Suivez nous sur instagram</p>
+    <article class="album_fav">
+        <?php
+            $insta = getInstaPhoto();
+            foreach ($insta as $photo): ?>
+                <a href="https://www.instagram.com/sultana_paris_75/" target="_blank">
+                    <img src="<?php echo $photo['path'] ?>" alt="<?php echo $photo['title'] ?>">
+                </a>
+        <?php endforeach; ?>
+    </article>
+    <!-- Fin photo instagram -->
+
+    <article class="album_fav">
+        <h2>Les coups de coeur !</h2>
+        <article>
+            <?php
+                $favorites = getFavorites();
+                foreach ($favorites as $fav): ?>
+                    <img src="<?php echo $fav['path'] ?>" alt="<?php echo $fav['title'] ?>">
+                <?php endforeach; ?>
+        </article>
+    </article>
+</section>
+
+<section class="media">
+    <nav>
+        <h2>Retrouvez-nous sur les réseaux sociaux</h2>
+        <a href="https://www.facebook.com/profile.php?id=100051722821573" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/sultana_paris_75/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </nav>
+</section>
+
+<section class="citation">
+    <figure>
+        <img src="public/images/cintre.jpg" alt="Photo de la citation"/>
+        <figcaption>
+            <h2>Sultana</h2>    
+            <p><em><< Celui qui a dit que l'argent ne faisait pas le bonheur,ne savait tout simplement pas où faire son shopping >></em></p>
+        </figcaption>
+    </figure>
+    
+</section>
+
+<section class="section_newsletter">
+    <p>Inscrivez vous à notre newsletter pour être au courant des nouvelles tendances et dernières news. Pas de panique vous pouvez vous désabonner quand vous le voulez.</p>
+
+    <form method="post" id="id_newsletter" class="newsletter">
+        <div>
+            <input type="email" id="email" name="user_mail" value="" placeholder="Saisissez votre adresse e-mail" />
+           <div class="user"> <button type="submit">s'abonner</button></div>
+        </div>
+    </form>
+</section>
+

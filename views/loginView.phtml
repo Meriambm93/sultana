@@ -1,0 +1,21 @@
+<?php if(isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] == true): ?>
+    <div>
+        <a href="deconnection.php">Se déconnecter</a>
+    </div> 
+
+<?php else: ?>
+    <div class="account">
+        <h1>Connectez-vous à votre compte</h1>
+    </div>
+    <div class="user">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+            <input type='input' placeholder='Adresse électronique' name="email">
+            <input type='password' placeholder='Mot de passe' name="password">
+            <button type='submit' name="login">S'identifier</button>
+            <a href='register.php'>Créer un Compte</a>
+        </form>
+        <div id='alert_msg'><?php if(isset($_SESSION["error_login"])){ echo $_SESSION["error_login"]; }?></div> 
+    </div>
+<?php endif; ?>
+
+

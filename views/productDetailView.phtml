@@ -1,0 +1,20 @@
+<?php 
+    if(isset($_GET['id']) && !empty($_GET['id'])) :?> 
+    <?php $product = getProduct($_GET['id']); ?>
+    <?php if (!$product): ?>
+        <?php header('Location: 404.php'); ?>
+        <?php die(); ?>
+    <?php endif; ?>
+    <section class="abaya">
+        <article>
+            <img src="<?php echo $product[0]['path'] ?>" alt="<?php echo $product[0]['title'] ?>" />
+            <aside>
+                <h3><?php echo $product[0]['title'] ?></h3>
+                <p><?php echo $product[0]['description'] ?></p>
+                <p class="prix"><strong><?php echo $product[0]['price'] ?> €</strong></p>
+                <a href="#">Ajouter au panier</a>
+            </aside>
+        </article>
+    </section>
+
+<?php endif; ?>

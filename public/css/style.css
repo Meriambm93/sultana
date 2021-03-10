@@ -1,0 +1,740 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    text-align: center;
+}
+
+.insta {
+  background-color:#fff8f7;
+}
+
+h1, h2 {
+  font-size: 4.5rem;
+  font-family: 'Parisienne', cursive;
+  font-weight: normal;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #c6b67d;
+    font-weight: bolder;
+}
+    
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #d3bf78; 
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+
+/* Header */
+.nav_client ul {
+    display: block;
+    margin-left: auto;
+    width: 300px;
+}
+
+.navigation {
+    border-bottom: thick double #d3bf78;
+    border-radius: 250px;
+}
+
+.navigation a {
+    color: black;
+    font-family: 'Parisienne', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 2.5;
+    color: #000000;
+    transition: all 1s ease-out;
+}
+
+.navigation a:hover, a:focus {
+    color:#d3bf78;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.logo {
+    text-align: center;    
+}
+
+.logo img{
+    width:23%;
+    padding-bottom:8rem;
+}
+/* Fin Header */
+
+/* Main */
+/* Flexslider */
+.new_product {
+    width: 30%;
+    margin: auto;
+    padding-top: 5rem;
+    
+}
+.new_product img {
+    border-radius: 20px;
+}
+/* Fin flexslider */
+
+/* Photo instagram */
+.album_fav {
+    padding: 1rem;
+    text-align: center;
+}
+.album_fav img {
+    width: 20%;
+    border-radius: 10px;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+/* Fin Photo instagram */
+
+
+/* Section media */
+.media {
+    text-align: center;
+}
+
+.media a{
+    font-size: 5rem;
+    margin: 5rem;
+    color: #d3bf78;
+}
+
+.media a:hover {
+    color: #e1c4b7;
+}
+/* Fin media*/
+
+/* Section citation */
+.citation {
+    overflow: hidden;
+}
+
+.citation p {
+    color: #000000;
+    font-family: 'Parisienne', cursive;
+    font-size: 3rem;
+    font-weight: normal;
+    width: 350px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+figcaption h2 {
+    color: #000000;
+}
+
+figure img {
+    width: 25%;
+    border-radius: 15px;
+}
+
+figure {
+    margin-top: 60px;
+}
+
+figcaption {
+    float: right;
+    margin-right: 40rem;
+    margin-top: 80px;
+}
+/* Fin citation */
+
+/* Newsletter */
+.section_newsletter {
+    text-align: center;
+    padding: 10px;
+}
+
+.section_newsletter form input {
+    width: 20%;
+    height: 40px;
+    border-radius: 1rem;
+}
+
+.newsletter {
+    font-size: 1.5rem;
+}
+.newsletter div {
+    padding: 2.5rem;
+}
+/* Fin newsletter*/
+/* Fin main */
+
+
+/* Footer */
+/* Info */
+.info {
+    border-top: thick double #d3bf78;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-evenly;
+    padding: 2.5px 2.3px;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+article.suivez_nous, .notre_societe, .information {
+   display: grid; 
+}
+
+.info, h3 {
+     color: #4f544c;
+     font-weight: bolder;
+     text-transform: uppercase;
+     font-family: 'Playfair Display', serif;
+     font-size: 1.5rem;
+}
+
+.info i {
+  color: #c6b67d;
+  padding: 2.5rem 2.0rem;
+  font-size: 1.5rem;
+  transition: all 1s ease-out;
+}
+
+i.fas.fa-envelope {
+    text-transform: lowercase;
+    font-size: 1.8rem;
+}
+
+.info i:hover, a:focus {
+    color: #9e908b;
+}
+/* Fin info */
+/* Fin Footer */
+
+/*PAGE NOUVELLE COLLECTION*/
+.clothes_list h3 {
+  font-size: 4.5rem;
+  font-family: 'Parisienne', cursive;
+  font-weight : normal;
+  text-transform: capitalize;
+}
+
+.clothes_list strong {
+    color: black;
+    font-family: 'Parisienne', cursive;
+  
+}
+
+.clothes_list img {
+    width: 30%;
+    border-radius: 25px;
+}
+
+.clothes_list .clear p {
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.clothes_list aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+/* Fin page nouvelle collection */
+
+/*  Page vetements */
+.clothes_list h3 {
+  font-size: 4.5rem;
+  font-family: 'Parisienne', cursive;
+  font-weight : normal;
+  text-transform: capitalize;
+}
+
+.clothes_list strong {
+    color: black;
+    font-family: 'Parisienne', cursive;
+}
+
+.clothes_list img {
+    width: 30%;
+    border-radius: 25px;
+}
+
+section .clothes_list .clear p {
+    width: 700px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    
+
+}
+.clothes_list clear .ajouter {
+    font-size: 3rem;
+    border-radius: 50px;
+    margin: 24px;
+}
+/* Fin page vetements */
+
+/* Page contact */
+.sultana {
+    margin-bottom: 25rem;
+}
+
+.sultana{
+    margin-bottom: 25rem;
+}
+.maps{
+    margin-top: 15rem;
+}
+
+.sultana, .maps, iframe {
+    max-width: 100%;
+    height: 34rem;
+    float: left;
+    margin-left: 45px;
+    border-radius: 15px;
+}
+
+.sultana p {
+    font-size: 25px;
+    font-family: 'Parisienne', cursive;
+    font-weight: normal;
+    color: #000000;
+    margin-left: 15rem;
+}
+
+.sultana p {
+    width: 30rem; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.sultana img {
+     width: 35%;
+     margin-top: 20rem;
+     margin-left: 15rem;
+}
+/* Fin page contact*/
+
+
+/* Page produit*/
+.abaya a {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e8daa2;
+    border-radius: 7%;
+    background-color: #e8daa2;
+    color: white;
+    padding: 5px 25px 13px ;
+    font-family: 'Playfair Display', serif;   
+}
+
+.abaya a:hover {
+   background-color: #e1c4b7;
+   border: #e1c4b7;
+   opacity: 0.5;
+}
+
+.abaya img {
+    width: 35%;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.abaya aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    margin-right: 20rem;
+    width: 30rem; 
+    text-overflow: ellipsis; 
+}
+
+.abaya h3 {
+  font-size: 4.5rem;
+  font-family: 'Parisienne', cursive;
+  font-weight : normal;
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+
+.abaya p {
+    font-family: 'Playfair Display', serif;
+    color: #4f544c;
+    font-size: 2rem;
+}
+
+.zoom {
+    height: 400px;
+}
+
+.zoom p {
+    text-align: center;
+}
+
+.zoom img {
+    width: 200px;
+    height: 267px;
+}
+
+.zoom img:hover {
+    width: 300px;
+    height: 400px;
+}
+/* Fin page produit */
+
+.clear {
+    clear: both;
+}
+
+
+/* Page formulaire utilisateur */
+.account h1 {
+    font-size:3rem;
+}
+
+.account p {
+    color: #4f544c;
+    font-weight: bolder;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    margin-bottom: 1.5rem;
+}
+
+.user input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding-left: 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+    padding: .7rem 0;
+}
+
+.user form {
+    display: grid;
+    width: 32.5rem;
+    margin: auto;
+}
+
+.user button{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    padding: 0 1.5rem;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    transition: all 1s ease-out;
+    margin-bottom: 13px;
+}
+
+.user button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.user a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    padding: 0 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    transition: all 1s ease-out;
+}
+
+.user a:hover {
+    color: white;
+    background-color: black;
+}
+
+fieldset {
+    border:none;
+}
+
+/* Fin formulaire utilisateur */
+
+
+/* CSS tablet */
+@media screen and (max-width: 1024px) {
+/*PAGE ACCUEIL	*/
+
+/* Navigation */
+
+.navigation a {
+  font-size: 2.8rem;
+}
+
+.navigation {
+    border-bottom: thick double #d3bf78;
+    border-radius: 0px;
+}
+
+a {
+    font-size: 1.8rem;
+}	
+
+.logo img {
+    width:33%;
+}
+/*fin navigation*/
+
+/*section insta photo instagram*/
+.album_fav img {
+    display:inline-block;
+}
+
+
+ /*fin section insta photo instagram*/
+ 
+/*section citation*/
+
+figure img {
+    width: 43%;
+    border-radius: 15px;
+}
+
+figcaption {
+    float: none;
+    margin: 0 auto;
+}
+
+.citation p {
+    width: 100%;
+}
+  
+/*section info*/
+.info {
+    border-top: thick double #d3bf78;
+    border-radius: 0px;
+}
+
+/*fin section info, fin page d'accueil*/
+
+/*page _nouvelleco et page vetements*/
+
+.clothes_list img {
+    width: 50%;
+    border-radius: 25px;
+}
+.clothes_list img {
+    width: 50%;
+    border-radius: 25px;
+}
+.abaya aside{
+    float: none;
+    width: 50%; 
+    margin: auto;
+   
+}
+.abaya img{
+    width: 60%;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+ 
+}
+.abaya aside {
+margin-bottom: 15rem;
+}
+
+
+/*fin page _nouvelleco et page vetements*/
+
+}
+/* CSS Tablet */
+
+/*  CSS Smarpthone */
+@media screen and (max-width: 767px) {
+    
+/*page d'accueil*/
+
+/*mise en forme*/
+html {
+		font-size: 50%;
+}
+body{
+    text-align: center;
+}	
+/*navigation*/
+
+.logo img {
+    width: 45%;
+    padding-top: 3rem;
+    padding-left: 7rem;
+}
+
+.navigation ul {
+    display: block;
+    padding-bottom: 3rem;
+}
+
+.navigation a {
+    font-size: 3.5rem;
+}
+
+.nav_client ul {
+    display: block;
+    margin-left: auto;
+    width: 300px;
+}
+/*fin navigation*/
+
+/*flexslider*/
+.new_product {
+    width: 50%;
+}
+ /*fin flexslider*/
+
+/*section insta photo instagram*/
+.album_fav img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    border-radius: 0;
+}
+/*section insta photo instagram*/
+
+.citation p {
+    padding-right: 23rem;
+}
+
+em,figcaption h2 {
+    display: none;
+}
+
+/* footer */
+.info{
+    display: table;
+}
+/* fin footer */
+
+/*page Contact*/
+.maps {
+    display: none;
+}
+
+.sultana img {
+    width: 40%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: 15rem;
+    margin-right: 12rem;
+}
+
+.sultana p {
+    font-size: 25px;
+    font-family: 'Parisienne', cursive;
+    font-weight: normal;
+    color: #000000;
+    margin-left: 45px;
+    width: 30rem; 
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+
+.sultana p strong {
+    margin-right: -3rem;
+}
+
+/*fin page contact*/
+
+/*page nouvelle collection*/
+
+.clothes_list img {
+    width: 60%;
+}
+/* fin page nouvelle collection*/
+
+/*page vetements*/
+
+.clothes_list img {
+     width: 60%;
+}
+/*page vetements*/   
+
+/*page _nouvelleco et page vetements*/
+
+.abaya img {
+    width: 60%;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.abaya aside {
+    margin-bottom: 15rem;
+}
+
+/* fin page _nouvelleco et page vetements*/
+
+}
+/* Fin CSS Smarpthone */
+
+#scrolltotop{
+    display:none;
+    z-index:1000;
+    position:fixed;
+    bottom:25px;
+    right:35px;
+    cursor:pointer;
+    width:40px;
+    height:40px;
+    background:#111111;}
+    
+	#scrolltotop div{
+    width:6px;
+    height:6px;
+    transform:rotate(-135deg);
+    border:solid #ffffff;
+    border-width:0 3px 3px 0;
+    padding:3px;
+    margin-top:16px;
+    margin-left:12px;}

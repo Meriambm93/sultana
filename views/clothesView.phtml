@@ -1,0 +1,17 @@
+<section class="clothes_list clear">
+
+    <h2>Vêtements</h2>
+
+    <?php
+        $clothes = getClothes();
+        foreach ($clothes as $clothe): ?>
+            <article>
+                <a href="productDetail.php?id=<?php echo $clothe['id'] ?>">
+                    <img src="<?php echo $clothe['path'] ?>" alt="<?php echo $clothe['title'] ?>">
+                </a>
+                <h3><?php echo $clothe['title'] ?></h3>
+            </article> 
+
+    <?php endforeach; ?>
+
+</section>
