@@ -28,13 +28,13 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `clothes` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `title` varchar(255) NOT NULL,
   `path` varchar(255) NOT NULL,
   `price` int(11) NOT NULL,
   `description` varchar(1000) NOT NULL,
   `is_new` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) AUTO_INCREMENT=10 ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `clothes`
@@ -60,7 +60,7 @@ CREATE TABLE `favorites` (
   `favorite_id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `path` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) AUTO_INCREMENT=10 ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `favorites`
@@ -83,10 +83,10 @@ INSERT INTO `favorites` (`favorite_id`, `title`, `path`) VALUES
 --
 
 CREATE TABLE `insta_photo` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `title` varchar(255) NOT NULL,
   `path` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) AUTO_INCREMENT=10 ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `insta_photo`
@@ -109,7 +109,7 @@ INSERT INTO `insta_photo` (`id`, `title`, `path`) VALUES
 --
 
 CREATE TABLE `newsletter` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -124,8 +124,8 @@ CREATE TABLE `users` (
   `firstname` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `pass` varchar(255) NOT NULL,
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY
+) AUTO_INCREMENT=3 ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `users`
@@ -141,61 +141,9 @@ INSERT INTO `users` (`lastname`, `firstname`, `email`, `pass`, `id`) VALUES
 --
 -- Index pour la table `clothes`
 --
-ALTER TABLE `clothes`
-  ADD PRIMARY KEY (`id`);
 
---
--- Index pour la table `favorites`
---
-ALTER TABLE `favorites`
-  ADD PRIMARY KEY (`favorite_id`);
 
---
--- Index pour la table `insta_photo`
---
-ALTER TABLE `insta_photo`
-  ADD PRIMARY KEY (`id`);
 
---
--- Index pour la table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
---
-
---
--- AUTO_INCREMENT pour la table `clothes`
---
-ALTER TABLE `clothes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT pour la table `favorites`
---
-ALTER TABLE `favorites`
-  MODIFY `favorite_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT pour la table `insta_photo`
---
-ALTER TABLE `insta_photo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT pour la table `newsletter`
---
-ALTER TABLE `newsletter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT pour la table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

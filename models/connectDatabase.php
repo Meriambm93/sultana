@@ -2,7 +2,7 @@
     function connectDB() {
         try
         {
-            $db = new PDO('mysql:host=home.3wa.io;port=3307;dbname=sev-03_meriamb_sultana;charset=utf8','meriamb', '00911f15MjM0OTA0NWQ2YmExY2VkOTdlNzFlZWEz8089f5b0');
+            $db = new PDO('mysql:host=localhost;port=3306;dbname=sultana;charset=utf8','root', '');
             return $db;
         }
         catch(Exception $e)
